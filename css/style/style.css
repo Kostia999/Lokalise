@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Regular.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-family: Graphik LCG, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    box-sizing: border-box;
+    margin-right: 51px;
+    margin-left: 51px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+.header::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 95px;
+    background: #CCCCCC;
+    margin-top: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+.logo {
+
+}
+.nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-right: 350px;
+
+
+}
+.nav__list li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+
+}
+
+.btns__white {
+    height: 45px;
+    padding-left: 36px;
+    padding-right: 36px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+}
+.btns__orange {
+    width: 120px;
+    height: 45px;
+    background-color: #FF6336;
+    color: #FFFFFF;
+    border: none;
+}
