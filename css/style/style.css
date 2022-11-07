@@ -1,6 +1,6 @@
-@font-face {
+ @font-face {
     font-family: 'Graphik LCG';
-    src: url('../fonts/GraphikLCG-Semibold.woff2') format('woff2');
+    src: url('../fonts/GraphikLCG-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,28 +8,41 @@
 
 @font-face {
     font-family: 'Graphik LCG';
-    src: url('../fonts/GraphikLCG-Regular.woff2') format('woff2');
+    src: url('../fonts/GraphikLCG-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
+ *,
+ ::after,
+ ::before {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
 
-html {
+ html {
     font-family: Graphik LCG, sans-serif;
     font-size: 15px;
     font-weight: normal;
-    box-sizing: border-box;
-    margin-right: 51px;
-    margin-left: 51px;
-}
+ }
 
-*,
-::after,
-::before {
-    box-sizing: inherit;
-}
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
 
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1340px;
+}
 .header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,36 +52,32 @@ html {
 .header::before {
     position: absolute;
     content: "";
-    display: block;
     height: 1px;
     left: 0;
     right: 0;
-    top: 95px;
+    bottom: 0;
     background: #CCCCCC;
-    margin-top: 36px;
 }
-
-a {
-    text-decoration: none;
-    color: inherit;
-
+.header__wrapper {
+    display: flex;
+    align-items: center;
 }
 
 
-.logo {
-
+.header__logo {
+    padding-right: 50px;
 }
-.nav {
+.header__nav {
     display: flex;
     justify-content: center;
-
 }
 
-.nav__list {
+.header-nav__list{
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 50px;
-    margin-right: 350px;
+    gap: 39px;
+    margin-right: 300px;
 
 
 }
@@ -89,10 +98,28 @@ a {
     border: 1px solid rgba(0, 0, 0, 0.5);
     margin-right: 10px;
 }
-.btns__orange {
-    width: 120px;
+.btns__orange { width: 120px;
     height: 45px;
     background-color: #FF6336;
     color: #FFFFFF;
     border: none;
 }
+
+ .main__text {
+     font-size: 65px;
+     padding-top: 129px;
+     height: 210px;
+
+ }
+ .main__text2 {
+     font-size: 25px;
+     line-height: 35px;
+     color: #000000;
+ }
+ .main__img {
+     display: flex;
+     padding-top: 151px;
+     padding-right: 67px;
+     padding-bottom: 182px;
+
+ }
