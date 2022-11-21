@@ -141,7 +141,7 @@ h2 {
     padding-right: 75px;
     font-size: 25px;
     line-height: 35px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 
 }
 
@@ -211,8 +211,8 @@ h2 {
     margin: 0;
     font-size: 50px;
     line-height: 60px;
-    padding-right: 165px;
     padding-bottom: 30px;
+    width: 493px;
 
 }
 
@@ -220,7 +220,10 @@ h2 {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 30px;
-
+    width: 520px;
+}
+.features__text-link {
+    text-decoration: underline;
 }
 
 .features__link {
@@ -280,7 +283,7 @@ h2 {
 
 .advantages__content-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 31px;
     align-items: baseline;
 }
@@ -315,19 +318,18 @@ h2 {
 .quote {
     background: #C9E8F2;
     padding-top: 63px;
-    padding-bottom: 245px;
+    padding-bottom:105px;
 }
 
 .quote__wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .quote__caption {
     padding-right: 60px;
     width: 900px;
-    font-weight: 400;
     font-size: 30px;
     line-height: 40px;
     padding-bottom: 23px;
@@ -420,6 +422,7 @@ h2 {
     padding-bottom: 161px;
 }
 
+
 .cta__wrapper {
     text-align: center;
 }
@@ -454,10 +457,35 @@ h2 {
 
 /* footer */
 
-.footer__wrapper {
-    display: flex;
-    justify-content: space-between;
+.footer {
+    position: relative;
     background: #EEEEEE;
     padding-top: 52px;
     padding-bottom: 43px;
+}
+.footer::before {
+    content: "";
+    display: block;
+    width: 1290px;
+    height: 1px;
+    left: 170px;
+    background-color: #000000;
+    position: absolute;
+}
+.footer__content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 52px;
+}
+
+.footer__text {
+    font-size: 12px;
+    line-height: 15px;
+    width: 301px;
+}
+.footer__copyright {
+    padding-left: 700px;
+    font-size: 12px;
+    line-height: 15px;
 }
